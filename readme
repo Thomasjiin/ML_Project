@@ -1,0 +1,26 @@
+Extract and characterize historical trends.
+Define what a trend is (e.g., series of consecutive increases, positive slope of a local regression, etc.).
+Identify turning points (changes in trend).
+Visualize Tesla's price cycles over time.
+Implement classic algorithms
+Crossed moving average (MA50 vs MA200, for example).
+Momentum indicators: RSI, MACD, ADX, etc.
+Binary classification: trend = 1 (up), 0 (down).
+Basic models: logistic regression, linear SVM.
+Improve with more powerful models
+Random Forest or XGBoost to capture non-linear patterns.
+Derived features: volatility, volume, oscillators, rate of change, etc.
+Training to predict the trend at D+1, D+3, or D+5.
+Explore sequential approaches
+LSTM, GRU, TCN, or Temporal Transformer to analyze the signal over time.
+Input = 60-day windows of technical features.
+Output = probability that the next trend will be bullish.
+Evaluate consistency and robustness
+Metrics: accuracy, F1-score, Mathews CorrCoef (best for unbalanced series).
+Backtest: if the model says “upward trend,” what would have happened in reality?
+Evaluate responsiveness (speed in detecting reversals).
+
+You get an automatic trend detection system on Tesla,
+Capable of indicating whether the market is in an uptrend, downtrend, or neutral phase,
+With visualizations (price curve + colored zones according to the predicted trend),
+And a clear comparison between simple models and AI models.
